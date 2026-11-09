@@ -245,10 +245,6 @@ section{scroll-margin-top:84px}
 .fonts button:nth-of-type(2){font-family:'Rubik'}
 .fonts button:nth-of-type(3){font-family:'Balsamiq Sans'}
 
-/* watermark */
-.wm{position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.08;transform:rotate(-24deg);
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='140'%3E%3Ctext x='10' y='80' font-family='Arial' font-size='26' font-weight='700' fill='%23023BA4'%3Esakina_web%3C/text%3E%3C/svg%3E");background-repeat:repeat}
-.wm-badge{position:fixed;right:16px;bottom:16px;z-index:91;pointer-events:none;background:rgba(255,255,255,.92);border:1px solid var(--line);color:var(--ink);font-size:12px;font-weight:700;padding:7px 12px;border-radius:999px}
 
 /* responsive */
 @media (max-width:1100px){
@@ -302,8 +298,6 @@ section{scroll-margin-top:84px}
   .fonts button[aria-pressed="true"]{display:block}
   .fonts button[aria-pressed="true"]::before{content:"Шрифт: ";font-family:'Nunito'}
   body.cta-on .fonts{bottom:84px}
-  body.cta-on .wm-badge{bottom:84px}
-  .wm-badge{right:12px;bottom:12px}
   .ny{font-size:13px;padding:8px 40px}
 }
 @media (max-width:420px){
@@ -582,8 +576,6 @@ section{scroll-margin-top:84px}
   <button type="button" data-hf="3" aria-pressed="false" title="Balsamiq Sans">Аа&nbsp;3</button>
 </div>
 
-<div class="wm" aria-hidden="true"></div>
-<div class="wm-badge">Демо&nbsp;- дизайн sakina_web</div>
 
 <script src="demo.js"></script>
 </body>
